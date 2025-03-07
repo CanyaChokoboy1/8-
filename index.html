@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С праздником 8 Марта!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffebf3; /* Розовый фон для праздничного настроения */
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            min-height: 100vh; /* Минимальная высота */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 28px; /* Уменьшим размер для мобильных */
+            margin-bottom: 10px;
+            color: #d6336c; /* Яркий розовый цвет */
+        }
+
+        header p {
+            font-size: 16px; /* Уменьшим размер для мобильных */
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap; /* Карточки будут переноситься на новую строку */
+            width: 100%; /* Занимает всю ширину */
+            max-width: 1200px; /* Максимальная ширина для больших экранов */
+            gap: 10px; /* Расстояние между карточками */
+        }
+
+        .card {
+            flex: 1 1 calc(25% - 20px); /* 4 карточки в ряд на больших экранах */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            font-size: 20px; /* Уменьшим размер для мобильных */
+            font-weight: bold;
+            transition: flex 0.5s ease;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            flex: 3;
+        }
+
+        .card img {
+            width: 60px; /* Уменьшим размер для мобильных */
+            height: 60px;
+            border-radius: 50%; /* Круглое изображение */
+            margin-bottom: 10px; /* Уменьшим отступ */
+            object-fit: cover; /* Чтобы изображение не искажалось */
+        }
+
+        .card1 {
+            background-color: #ff6b6b; /* Красный */
+        }
+
+        .card2 {
+            background-color: #ff9f43; /* Оранжевый */
+        }
+
+        .card3 {
+            background-color: #f368e0; /* Розовый */
+        }
+
+        .card4 {
+            background-color: #54a0ff; /* Голубой */
+        }
+
+        .card-content {
+            font-size: 12px; /* Уменьшим размер для мобильных */
+            line-height: 1.4;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px; /* Уменьшим размер для мобильных */
+            color: #666;
+            text-align: center;
+        }
+
+        footer a {
+            color: #d6336c;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .home {
+            color: green;
+        }
+
+        /* Медиа-запросы для мобильных устройств */
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 calc(50% - 20px); /* 2 карточки в ряд на мобильных */
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            .card img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .card-content {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                flex: 1 1 100%; /* 1 карточка в ряд на очень маленьких экранах */
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+
+            header p {
+                font-size: 12px;
+            }
+
+            .card img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .card-content {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>С праздником 8 Марта!</h1>
+        <p>8 Марта — это день, когда мы чествуем женщин, их красоту, мудрость и вдохновение. Пусть этот день будет наполнен радостью, улыбками и теплом!</p>
+    </header>
+
+    <div class="wrapper">
+        <div class="card card1">
+            <img src="apa.jpeg" alt="Апашка">
+            <div>
+                <h2>Апашка</h2>
+                <p class="card-content">Дорогая Апашка, пусть ваша жизнь будет наполнена здоровьем, радостью и долгими годами! Спасибо за вашу мудрость и заботу, которые вы дарите нашей семье. Мы вас очень любим!</p>
+            </div>
+        </div>
+        <div class="card card2">
+            <img src="SQOO3520.JPG" alt="Мама">
+            <div>
+                <h2>Мама</h2>
+                <p class="card-content">Дорогая мама, пусть в вашей жизни будет больше счастья, улыбок и, конечно же, денег! Вы заслуживаете всего самого лучшего. Спасибо за вашу бесконечную любовь и поддержку!</p>
+            </div>
+        </div>
+        <div class="card card3">
+            <img src="IMG_0376.JPG" alt="Дарига">
+            <div>
+                <h2>Дарига</h2>
+                <p class="card-content">Дорогая сестренка, пусть все твои мечты сбываются, особенно поступление в колледж! Ты умная, талантливая и сильная, и у тебя всё получится. Мы в тебя верим!</p>
+            </div>
+        </div>
+        <div class="card card4">
+            <img src="IMG_4682.JPG" alt="Латифа">
+            <div>
+                <h2>Латифа</h2>
+                <p class="card-content">Дорогая младшая сестренка, учись хорошо, но не забывай радоваться жизни! Ты наша маленькая звездочка, и мы гордимся тобой. Пусть у тебя всё получается легко и с улыбкой!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Создано с любовью к 8 Марта. Пусть ваш день будет ярким и радостным!</p>
+        <p><span class="home">От ваших мальчиков!</span></p>
+    </footer>
+</body>
+</html>
